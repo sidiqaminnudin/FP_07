@@ -1,0 +1,47 @@
+body {
+	margin-top: 50px;
+	font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
+	font-size: 16px;
+	background: url('../img/tile.jpg') top left repeat;
+}
+
+/*navbar*/
+.input-group{
+	margin-right: -7vw;
+}
+.dropdown-menu{
+	background: #343434;
+}
+.dropdown-item a{
+	background: #343434;
+	color: #ffffff !important; 
+}
+.dropdown-item a:hover{
+	color: #343434 !important; 
+	font-weight: bold;
+}
+/*Crausel*/
+
+
+/*content*/
+.content{
+	margin-top: 20px;
+}
+.content .row{
+	margin: 10px 0 10px 0;
+}
+.pic-content{
+	width: 200px;
+	height: 150px;
+}
+.pic-content img{
+	width: 100%;
+	height: 100%;
+}
+.riview-content{
+	margin: 0px 5px 0px 5px;
+}
+.riview-content h4{
+	font-weight: bold;
+	margin: 0 0;	
+}
