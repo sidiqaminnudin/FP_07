@@ -8,7 +8,7 @@
 		<meta name="author" content="">
 		<link rel="icon" href="assets/img/favicon1.ico">
 
-		<title>hot news</title>
+		<title>video</title>
 	
 		<!-- Bootstrap -->
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -62,72 +62,12 @@
 			<span class="logo"><h2><a href="index.html">R~ead Oto</a></h2></span>
 		</section>
 
-		<!-- content hot news -->
+		<!-- VIDEO -->
 		<section>
-			<div class="container-fluid">
-				<div class="news">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-						  <!-- Wrapper for slides -->
-						<div class="carousel-inner">
-							
-								<div class="item active">
-									<div class="bg"></div>
-									<h3>Hot's</h3>
-									<h4>Tittle Here</h4>
-									<div class="content">
-										<img src="assets/img/46.jpg">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur.</p> 
-										<p>Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div>
-								</div>
-
-								<div class="item">
-									<div class="bg"></div>
-									<h3>Hot's</h3>
-									<h4>Tittle Here</h4>
-									<div class="content">
-										<img src="assets/img/ny.jpg">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div>
-								</div>
-						</div>
-							  <!-- Left and right controls -->
-							<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-							<span class="sr-only">Previous</span>
-							</a>
-							<a class="right carousel-control" href="#myCarousel" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-							<span class="sr-only">Next</span>
-							</a>
-						</div>
-				</div>
-			</div>
+			 <div id="player" class="container-fluid video">
+			 	
+			 </div>
 		</section>
-
 		<!-- preview -->
 		<section>
 			<div class="preview">
@@ -141,7 +81,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.Duis aute irure dolor in reprehenderit t<br><a href="#">Read More</a></p>
+						consequat.Duis aute irure dolor in reprehenderit t<br><a href="hot.html">Read More</a></p>
 					</div>					
 				</div>
 				<div class="mid-review">
@@ -154,7 +94,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.Duis aute irure dolor in reprehenderit t<br><a href="#">Read More</a></p>
+						consequat.Duis aute irure dolor in reprehenderit t<br><a href="hot.html">Read More</a></p>
 					</div>	
 				</div>
 				<div class="bot-review">
@@ -167,7 +107,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.Duis aute irure dolor in reprehenderit t<br><a href="#">Read More</a></p>
+						consequat.Duis aute irure dolor in reprehenderit t<br><a href="hot.html">Read More</a></p>
 					</div>					
 				</div>	
 			</div>
@@ -210,5 +150,48 @@
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/bootstrap.js"></script>
 	
+
+	 <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: '1OMD_LSELAM',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
 	</body>
 </html>
